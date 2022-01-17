@@ -1,0 +1,63 @@
+@import "./variables.scss";
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
+
+    transition: all .7s linear;
+
+    width: 337px;
+    padding-top: 29px;
+    padding-left: 96px;
+    padding-bottom: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    a{
+        text-decoration: none;
+    }
+
+    .navbar__brand {
+        max-width: 225px;
+    }
+
+    .navbar__list {
+        list-style: outside;
+
+        .list__item {
+            @include text($grey_3,18px,300);
+            margin-bottom: 52px;
+
+            
+        }
+        .list__link-active{
+            pointer-events: none;
+            li{
+                color: $grey_1;
+            }
+        }
+    }
+
+    .left_line{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 79px;
+        width: 1px;
+        z-index: 10000;
+        background: $grey_4;
+    }
+
+    .navbar__phone{
+        @include text($grey_1,18px,600);
+    }
+}
+
+.nav_closed{
+    left: -337px;
+}
