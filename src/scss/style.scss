@@ -98,6 +98,16 @@ ul {
   }
 }
   
+.right_line{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  right: 96px;
+  width: 1px;
+  z-index: 10000;
+  background: $grey_4;
+}
+
 .intro{
   display: flex;
   
