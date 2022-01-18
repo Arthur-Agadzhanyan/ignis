@@ -1,0 +1,32 @@
+.footer{
+    position: relative;
+
+    padding: 45px 0px;
+    padding-top: 43px;
+    
+
+    .footer__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .content__logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            margin-left: auto;
+        }
+
+        .content__menu {
+            padding-right: 116px;
+            margin-left: auto;
+
+            .menu__item {
+                text-decoration: none;
+                @include text($grey_3,18px,300,24px);
+                margin-left: 32px;
+            }
+        }
+    }
+}
