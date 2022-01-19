@@ -82,6 +82,9 @@ ul {
   padding-bottom: 50px;
   @include text($black,40px,100);
 
+  position: relative;
+  z-index: 1;
+
   transition: all .2s linear;
 
   &-grey{
@@ -132,6 +135,21 @@ ul {
     position: relative;
     margin-bottom: -1px;
     z-index: 100;
+  }
+}
+
+.mb_left_line{
+  display: none;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 30px;
+  width: 1px;
+  z-index: 10000;
+  background: $grey_4;
+
+  @media screen and (max-width: 1100px){
+    display: block;
   }
 }
   
@@ -235,6 +253,10 @@ ul {
     @media screen and (max-width: 1500px) {
       flex: 0 1 60%;
     }
+    
+    @media screen and (max-width: 1100px) {
+      margin-top: 71px;
+    }
   }
 
   .intro__title{
@@ -243,7 +265,7 @@ ul {
     max-width: 459px;
     cursor: pointer;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
   }
 
   &__content{
@@ -302,8 +324,12 @@ ul {
         max-width: 350px;
       }
     }
+    @media screen and (max-width: 1100px) {
+      margin-top: 71px;
+    }
   }
 
+  
 }
 
 .about{
