@@ -124,6 +124,10 @@
         img{
             width: 100%;
         }
+
+        @media screen and (max-width: 400px) {
+            max-width: 150px;
+        }
     }
 
     .burger{
@@ -251,8 +255,13 @@
         text-align: center;
         padding-bottom: 24px;
     }
+
+    @media screen and (max-width: 400px) {
+        top: 61px;
+        height: calc(100vh - 61px);
+    }
 }
 
 .mb_bar_closed{
-    top: -150vh;   
+    top: -150vh !important;   
 }
