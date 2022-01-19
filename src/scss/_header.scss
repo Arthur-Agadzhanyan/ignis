@@ -24,6 +24,12 @@
 
     .navbar__brand {
         max-width: 225px;
+
+        @media screen and (max-width: 1300px) {
+            img{
+                max-width: 170px;
+            }
+        }
     }
 
     .navbar__list {
@@ -55,6 +61,19 @@
 
     .navbar__phone{
         @include text($grey_1,18px,600);
+    }
+
+    @media screen and (max-width: 1600px) {
+        width: 290px;
+        padding-left: 60px;
+
+        .left_line{
+            left: 43.5px;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        width: 220px;
     }
 }
 
