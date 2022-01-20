@@ -16,6 +16,7 @@ window.scrollTo(0, 0)
 
 introTitle.addEventListener('click',()=>{
     window.scrollTo(0, 0)
+
     document.body.classList.toggle("scroll_block")
     navigation.classList.toggle("nav_closed")
     navigationMb.classList.toggle("nav_closed")
@@ -40,9 +41,7 @@ navbarBtn.addEventListener('click',(e)=>{
         setTimeout(()=>{
             mobileBar.classList.add("bot_0")
         },500)
-    }
-
-    
+    } 
 })
 
 listLinks.forEach((link)=>{
@@ -53,6 +52,7 @@ listLinks.forEach((link)=>{
         })
         e.currentTarget.classList.add("list__link-active")
         mobileBar.classList.add("mb_bar_closed")
+        mobileBar.classList.remove("bot_0")
         navbarBtn.classList.remove('burger_active')
     })
 
