@@ -37,6 +37,9 @@ body {
 .scroll_block{
   overflow: hidden;
   // overflow-block: scroll;
+  position: fixed;
+  left: -5px;
+  // padding-right: 20px;
 }
   
 ul {

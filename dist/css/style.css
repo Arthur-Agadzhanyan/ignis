@@ -751,6 +751,8 @@ body {
 
 .scroll_block {
   overflow: hidden;
+  position: fixed;
+  left: -5px;
 }
 
 ul {

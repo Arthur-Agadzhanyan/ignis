@@ -47,3 +47,7 @@ listLinks.forEach((link)=>{
     })
 
 })
+
+document.addEventListener("touchmove", function(event){ // отключение отскока
+    event.preventDefault();
+});
