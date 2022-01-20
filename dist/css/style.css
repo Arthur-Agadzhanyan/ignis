@@ -1079,7 +1079,14 @@ ul {
   text-align: center;
 }
 
+.directors {
+  position: relative;
+  overflow: hidden;
+}
+
 .directors .directors__content {
+  position: relative;
+  z-index: 2;
   padding-top: 80px;
 }
 
@@ -1141,6 +1148,29 @@ ul {
 .directors .directors__content-second {
   padding-top: 0px;
   padding-bottom: 169px;
+}
+
+.directors .directors__vectors {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: 1;
+}
+
+.directors .directors__vector_1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.directors .directors__vector_2 {
+  display: none;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
 
 .portfolio__title {
@@ -1322,8 +1352,10 @@ ul {
 }
 
 .contacts {
+  position: relative;
   padding-bottom: 125px;
   background: #A0C51F;
+  overflow: hidden;
 }
 
 .contacts .section_title {
@@ -1374,6 +1406,20 @@ ul {
   font-size: 24px;
   font-weight: 600;
   line-height: 160%;
+}
+
+.contacts .contacts__vectors {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contacts .contact__mb_vectors {
+  display: none;
 }
 
 @media screen and (max-width: 1750px) {
@@ -2085,6 +2131,19 @@ ul {
     width: 80%;
   }
 
+  .directors .directors__vectors {
+    display: none;
+  }
+
+  .directors .directors__vector_1 {
+    display: block;
+    width: 80vw;
+  }
+
+  .directors .directors__vector_2 {
+    display: block;
+  }
+
   .portfolio .portfolio__block .violet__image {
     margin-top: -170px;
     margin-left: -140px;
@@ -2252,6 +2311,16 @@ ul {
     padding-bottom: 24px;
   }
 
+  .directors .directors__vector_1 {
+    display: block;
+    width: 120vw;
+    top: 0;
+  }
+
+  .directors .directors__vector_2 {
+    min-height: 75vh;
+  }
+
   .portfolio__title {
     color: #fff;
     font-size: 23px;
@@ -2313,6 +2382,22 @@ ul {
   .contacts__content {
     padding: 24px 16px;
     padding-bottom: 10px;
+  }
+
+  .contacts .contacts__vectors {
+    display: none;
+  }
+
+  .contacts .contact__mb_vectors {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    min-height: 100%;
   }
 
   .contacts {
@@ -2542,6 +2627,12 @@ ul {
     padding-top: 12px;
   }
 
+  .directors .directors__vector_1 {
+    display: block;
+    width: 120vw;
+    height: 120vh;
+  }
+
   .portfolio__title {
     color: #fff;
     font-size: 20px;
@@ -2645,6 +2736,18 @@ ul {
   .directors .directors__content-second {
     padding-top: 16px;
     padding-bottom: 24px;
+  }
+
+  .directors .directors__vector_1 {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .directors .directors__vector_2 {
+    display: block;
+    width: auto;
+    height: auto;
   }
 
   .portfolio .portfolio__block .portfolio__list .list__item {
