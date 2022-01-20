@@ -185,7 +185,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    height: calc(100vh - 71px);
+    min-height: calc(100vh - 71px);
 
     background: #fff;
     
@@ -208,11 +208,13 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        transition: all .2s linear;
 
         .list__item {
             @include text($grey_3,24px,300);
             position: relative;
-
+            transition: all .2s linear;
+            
             &::after{
                 content: " ";
                 position: absolute;
@@ -233,7 +235,7 @@
 
         .list__link{
             margin-bottom: 52px;
-
+            transition: all .2s linear;
             &:last-child{
                 li::after{
                     display: none;
@@ -242,6 +244,7 @@
         }
 
         .list__link-active{
+            transition: all .2s linear;
             pointer-events: none;
             li{
                 color: $grey_1;
@@ -251,17 +254,28 @@
     }
 
     .navbar__phone{
+        transition: all .2s linear;
         @include text($grey_1,20px,600);
         text-align: center;
         padding-bottom: 24px;
     }
 
+    .mb_phone{
+        @media screen and (max-width: 500px) {
+            margin-top: -65px;
+        }
+    }
+
     @media screen and (max-width: 400px) {
         top: 61px;
-        height: calc(100vh - 61px);
+        min-height: calc(100vh - 61px);
     }
 }
 
 .mb_bar_closed{
     top: -150vh !important;   
+}
+
+.bot_0{
+    bottom: 0 !important;
 }

@@ -608,7 +608,7 @@ template {
   left: 0;
   right: 0;
   z-index: 1000;
-  height: calc(100vh - 71px);
+  min-height: calc(100vh - 71px);
   background: #fff;
   -webkit-transition: all .5s linear;
   -o-transition: all .5s linear;
@@ -636,6 +636,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .mobile_bar .navbar__list .list__item {
@@ -644,6 +647,9 @@ template {
   font-weight: 300;
   line-height: normal;
   position: relative;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .mobile_bar .navbar__list .list__item::after {
@@ -663,6 +669,9 @@ template {
 
 .mobile_bar .navbar__list .list__link {
   margin-bottom: 52px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .mobile_bar .navbar__list .list__link:last-child li::after {
@@ -670,6 +679,9 @@ template {
 }
 
 .mobile_bar .navbar__list .list__link-active {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
   pointer-events: none;
 }
 
@@ -678,6 +690,9 @@ template {
 }
 
 .mobile_bar .navbar__phone {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
   color: #333;
   font-size: 20px;
   font-weight: 600;
@@ -688,6 +703,10 @@ template {
 
 .mb_bar_closed {
   top: -150vh !important;
+}
+
+.bot_0 {
+  bottom: 0 !important;
 }
 
 .footer {
@@ -2289,6 +2308,10 @@ ul {
 }
 
 @media screen and (max-width: 500px) {
+  .mobile_bar .mb_phone {
+    margin-top: -65px;
+  }
+
   .footer .footer__content .content__logo img {
     width: 150px;
   }
@@ -2599,7 +2622,7 @@ ul {
 
   .mobile_bar {
     top: 61px;
-    height: calc(100vh - 61px);
+    min-height: calc(100vh - 61px);
   }
 
   .section_title {
