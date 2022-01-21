@@ -1,6 +1,6 @@
 @@include('webpTest.js');
 
-const introTitle = document.querySelector('.intro__title');
+AOS.init();
 
 const navigation = document.getElementById('navigation')
 const navigationMb = document.querySelector('.navbar_mobile')
@@ -12,17 +12,19 @@ const listLinks = document.querySelectorAll('.list__link')
 const navbarBtn = document.getElementById("navbar__btn")
 const mobileBar = document.querySelector(".mobile_bar")
 
+const introBlock = document.querySelector('.intro_block')
+
 window.scrollTo(0, 0)
 
-introTitle.addEventListener('click',()=>{
-    window.scrollTo(0, 0)
+window.addEventListener('scroll',()=>{
+    // window.scrollTo(0, 0)
 
-    document.body.classList.toggle("scroll_block")
-    navigation.classList.toggle("nav_closed")
-    navigationMb.classList.toggle("nav_closed")
+    document.body.classList.remove("scroll_block")
+    navigation.classList.remove("nav_closed")
+    navigationMb.classList.remove("nav_closed")
 
-    introInfo.classList.toggle("info_opened")
-    introContent.classList.toggle("content_opened")
+    introInfo.classList.add("info_opened")
+    introContent.classList.add("content_opened")
 
     listLinks.forEach((item)=>{
         item.classList.remove('list__link-active')
