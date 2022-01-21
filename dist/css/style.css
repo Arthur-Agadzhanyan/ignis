@@ -1443,6 +1443,41 @@ ul {
   display: none;
 }
 
+@media screen and (min-width: 1921px) {
+  .content_wrapper {
+    padding-left: 376px;
+    max-width: calc(100% - 150px);
+  }
+
+  .title_container {
+    padding-left: 376px;
+  }
+
+  .intro .content_wrapper {
+    padding-left: 376px;
+    max-width: calc(100% - 21px);
+  }
+
+  .about .content_wrapper {
+    padding-left: 376px;
+    max-width: none;
+  }
+
+  .portfolio .portfolio__block .violet__image {
+    margin-top: -425px;
+  }
+
+  .portfolio .portfolio__blue {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 2350px) {
+  .portfolio .portfolio__blue {
+    min-height: 60vh;
+  }
+}
+
 @media screen and (max-width: 1750px) {
   .intro__info .info__content .content__title {
     font-size: 43px;
