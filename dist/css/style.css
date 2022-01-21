@@ -451,9 +451,9 @@ template {
   left: 0;
   bottom: 0;
   z-index: 10000;
-  -webkit-transition: all .7s linear;
-  -o-transition: all .7s linear;
-  transition: all .7s linear;
+  -webkit-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  transition: all .8s linear;
   width: 337px;
   padding-top: 29px;
   padding-left: 96px;
@@ -773,6 +773,8 @@ body::-webkit-scrollbar {
 }
 
 .scroll_block {
+  overflow: hidden;
+  position: fixed;
   left: -5px;
 }
 
@@ -888,9 +890,9 @@ ul {
   top: 0;
   bottom: 0;
   background: #fff;
-  -webkit-transition: all .7s linear;
-  -o-transition: all .7s linear;
-  transition: all .7s linear;
+  -webkit-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  transition: all .8s linear;
 }
 
 .intro__info .info__content {
@@ -963,9 +965,9 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  -webkit-transition: all .7s linear;
-  -o-transition: all .7s linear;
-  transition: all .7s linear;
+  -webkit-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  transition: all .8s linear;
 }
 
 .intro__content .content_circle {

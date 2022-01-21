@@ -38,11 +38,9 @@ body {
 }
 
 .scroll_block{
-  // overflow: hidden;
-  // overflow-block: scroll;
-  // position: fixed;
+  overflow: hidden;
+  position: fixed;
   left: -5px;
-  // padding-right: 20px;
 }
   
 ul {
@@ -277,7 +275,7 @@ ul {
 
     background: #fff;
 
-    transition: all .7s linear;
+    transition: all .8s linear;
 
     .info__content{
       max-width: 536px;
@@ -436,7 +434,7 @@ ul {
 
     overflow: hidden;
 
-    transition: all .7s linear;
+    transition: all .8s linear;
 
     .content_circle{
       position: absolute;

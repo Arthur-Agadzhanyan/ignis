@@ -32,9 +32,7 @@ const introBlock = document.querySelector('.intro_block')
 
 window.scrollTo(0, 0)
 
-window.addEventListener('scroll',()=>{
-    // window.scrollTo(0, 0)
-
+setTimeout(()=>{
     document.body.classList.remove("scroll_block")
     navigation.classList.remove("nav_closed")
     navigationMb.classList.remove("nav_closed")
@@ -45,7 +43,7 @@ window.addEventListener('scroll',()=>{
     listLinks.forEach((item)=>{
         item.classList.remove('list__link-active')
     })
-})
+},2000)
 
 navbarBtn.addEventListener('click',(e)=>{
 
